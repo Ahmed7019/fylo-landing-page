@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Hanken+Grotesk:wght@500;700;800&family=Raleway:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
 /* 
@@ -42,8 +42,8 @@ header,
 nav,
 main,
 footer {
-  margin: 2rem;
-  width: 100%;
+  margin: 1rem;
+  padding: 1rem;
 }
 
 /*
@@ -83,7 +83,7 @@ ul li {
 }
 
 /* 
-    - Style the header
+    header partition
 */
 header {
   text-align: center;
@@ -94,8 +94,54 @@ header {
 }
 header img {
   width: 300px;
+  margin: 2.5rem 0;
 }
 
+header :nth-child(2) h1,
+header :nth-child(2) p {
+  margin: 1rem auto;
+  width: 95%;
+}
+
+/* To style the button */
+
+header :last-child {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header div button,
+header div input {
+  width: 95%;
+  padding: 15px;
+  margin: 7.5px 0;
+  border-radius: 0.2rem;
+  -webkit-border-radius: 0.2rem;
+  -moz-border-radius: 0.2rem;
+  -ms-border-radius: 0.2rem;
+  -o-border-radius: 0.2rem;
+  font-family: "Raleway", sans-serif;
+  outline: none;
+}
+
+header div input {
+  border: 1px solid var(--Very-Dark-Blue);
+}
+
+header div input::placeholder {
+  color: var(--Light-Gray);
+}
+header div button {
+  border: none;
+  color: var(--Light-Grayish-Blue);
+  background-color: var(--Bright-Blue);
+  font-weight: 600;
+}
+
+
+/* main partition */
 main img {
   width: 300px;
 }
