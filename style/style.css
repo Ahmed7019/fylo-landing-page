@@ -42,20 +42,22 @@ header,
 nav,
 main,
 footer {
-  margin: 1rem;
-  padding: 1rem;
+  margin: 2rem 0;
 }
 
 /*
     Navbar
     */
-nav {
+nav :first-child {
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+nav :first-child div {
+  padding: 1rem;
+}
 nav img {
   width: 100px;
   margin-right: 1.5rem;
@@ -71,14 +73,13 @@ ul {
 }
 
 nav ul {
-  width: 90%;
   column-count: 3;
   column-gap: 10px;
 }
 
 ul li {
   font-size: 12px;
-  margin: 0 5px;
+  margin-left: 5px;
   padding: 10px;
 }
 
@@ -97,10 +98,11 @@ header img {
   margin: 2.5rem 0;
 }
 
-header :nth-child(2) h1,
-header :nth-child(2) p {
+h1,
+h2,
+p {
   margin: 1rem auto;
-  width: 95%;
+  width: 80%;
 }
 
 /* To style the button */
@@ -114,7 +116,7 @@ header :last-child {
 
 header div button,
 header div input {
-  width: 95%;
+  width: 350px;
   padding: 15px;
   margin: 7.5px 0;
   border-radius: 0.2rem;
@@ -127,7 +129,7 @@ header div input {
 }
 
 header div input {
-  border: 1px solid var(--Very-Dark-Blue);
+  border: 1px solid var(--Desaturated-Blue);
 }
 
 header div input::placeholder {
@@ -140,8 +142,110 @@ header div button {
   font-weight: 600;
 }
 
-
 /* main partition */
-main img {
+main {
+  margin-top: 5rem;
+  text-align: center;
+  background-image: url(../images/bg-curve-mobile.svg);
+  background-repeat: no-repeat;
+  position: top;
+  background-size: 100%;
+}
+main :first-child {
+  /* background-color: var(--Light-Grayish-Blue); */
+  position: relative;
+  margin-top: 4rem;
+  width: 100%;
+}
+
+main :first-child h2 {
+  /* width: 350px; */
+  padding: 1rem;
+}
+main :first-child p {
+  text-align: left;
+  margin: 1rem auto;
+}
+main :first-child img {
+  width: 250px;
+  position: relative;
+  top: 0.5rem;
+  margin: 3rem 0;
+}
+
+.how-it-works {
+  padding: 10px;
+  border-bottom: 1px solid var(--Moderate-Cyan);
   width: 300px;
+  margin: auto;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.how-it-works svg {
+  display: inline;
+  width: 100px;
+}
+
+.how-it-works a {
+  color: var(--Moderate-Cyan);
+}
+
+.card {
+  width: 450px;
+  /* height: 400px; */
+  font-size: smaller;
+  margin: 1rem auto;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: flex-start;
+  text-align: left;
+  background-color: white;
+  border-radius: 0.3rem;
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  -ms-border-radius: 0.3rem;
+  -o-border-radius: 0.3rem;
+  box-shadow: 1px 0px 10px 5px var(--Light-Gray);
+}
+
+.card div {
+  margin: 0;
+  padding: 0;
+}
+
+.card > div img {
+  width: 40px;
+  margin: 0;
+}
+
+.card p {
+  font-weight: bold;
+  line-height: 2rem;
+}
+
+.founder-testimonial {
+  display: flex;
+}
+
+.founder-testimonial img {
+  display: inline;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.founder-info {
+  display: inline-flex;
+  flex-direction: column;
+}
+.founder-info p {
+ font-weight: bold;
+
 }
