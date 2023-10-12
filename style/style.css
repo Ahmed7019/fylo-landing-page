@@ -116,7 +116,7 @@ section {
 
 section img {
   width: 450px;
-  margin: 3rem auto;
+  margin: 5rem auto;
 }
 .first-section :last-child {
   display: flex;
@@ -160,41 +160,52 @@ main :first-child h2 {
   margin: 1rem;
 }
 
-main :nth-child(2) {
+.bg {
   background-image: url(../images/bg-curve-mobile.svg);
   background-repeat: no-repeat;
-  background-position: top;
-  background-size: 100%;
+  /* background-position: top; */
+  /* background-size: 100%; */
 }
+
+.sec-2 {
+  background-color: var(--Light-Grayish-Blue);
+}
+
+.stay-active h2  {
+  width: 100%;
+} 
+.stay-active p {
+  width: 80%;
+  text-align: left;
+  line-height: 1.5;
+  margin: .5rem auto;
+  color: var(--Desaturated-Blue);
+}
+
 .how-it-works {
-  padding: 10px;
-  border-bottom: 1px solid var(--Moderate-Cyan);
-  width: 300px;
-  margin: auto;
+  padding: .5rem;
+  border-bottom: 2px solid var(--Moderate-Cyan);
+  margin: 3.5rem auto;
+  width: max-content;
   display: flex;
   text-align: center;
   justify-content: center;
   align-items: center;
 }
 
-.how-it-works svg {
-  display: inline;
-  width: 100px;
-}
 
 .how-it-works a {
   color: var(--Moderate-Cyan);
 }
 
+
 .card {
   width: 450px;
-  /* height: 400px; */
   font-size: smaller;
   margin: 1rem auto;
   padding: 1rem 2rem;
   display: flex;
   flex-direction: column;
-  position: relative;
   justify-content: flex-start;
   text-align: left;
   background-color: white;
@@ -206,6 +217,7 @@ main :nth-child(2) {
   box-shadow: 1px 0px 10px 5px var(--Light-Gray);
 }
 
+
 .card div {
   margin: 0;
   padding: 0;
@@ -213,20 +225,25 @@ main :nth-child(2) {
 
 .card > div img {
   width: 40px;
+  height: 40px;
   margin: 0;
+  padding: 0;
+  
 }
 
 .card p {
+  text-align: left;
+  width: 100%;
   font-weight: bold;
-  line-height: 2rem;
+  line-height: 2;
 }
 
 .founder-testimonial {
   display: flex;
+  align-items: center;
 }
 
 .founder-testimonial img {
-  display: inline;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -235,9 +252,15 @@ main :nth-child(2) {
 }
 
 .founder-info {
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
+  align-items: center;
+  position: relative;
+  left: 1.5rem;
 }
+
 .founder-info p {
   font-weight: bold;
+  position: relative;
+  line-height: 0;
 }
