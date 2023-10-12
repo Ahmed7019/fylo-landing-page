@@ -45,19 +45,15 @@ footer {
   margin: 2rem 0;
 }
 
-/*
-    Navbar
-    */
-nav :first-child {
+nav {
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 1rem;
 }
 
-nav :first-child div {
-  padding: 1rem;
-}
+
 nav img {
   width: 100px;
   margin-right: 1.5rem;
@@ -77,45 +73,44 @@ nav ul {
   column-gap: 10px;
 }
 
-ul li {
-  font-size: 12px;
+nav ul li {
+  font-size: 15px;
   margin-left: 5px;
+  font-weight: 500;
   padding: 10px;
 }
 
-/* 
-    header partition
-*/
-header {
+
+.first-section {
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-header img {
-  width: 300px;
-  margin: 2.5rem 0;
+.first-section-img img {
+  width: 500px;
+  margin: 2.5rem auto;
 }
 
 h1,
 h2,
 p {
   margin: 1rem auto;
-  width: 80%;
+  width: 70%;
 }
 
 /* To style the button */
 
-header :last-child {
+.first-section :last-child {
   display: flex;
   display: -webkit-flex;
   flex-direction: column;
   align-items: center;
 }
 
-header div button,
-header div input {
+.first-section div button,
+.first-section div input {
   width: 350px;
   padding: 15px;
   margin: 7.5px 0;
@@ -128,14 +123,14 @@ header div input {
   outline: none;
 }
 
-header div input {
+.first-section div input {
   border: 1px solid var(--Desaturated-Blue);
 }
 
-header div input::placeholder {
+.first-section div input::placeholder {
   color: var(--Light-Gray);
 }
-header div button {
+.first-section div button {
   border: none;
   color: var(--Light-Grayish-Blue);
   background-color: var(--Bright-Blue);
