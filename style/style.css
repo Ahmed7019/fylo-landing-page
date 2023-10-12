@@ -91,11 +91,8 @@ p {
 
 /* main partition */
 main {
-  margin-top: 5rem;
+  margin: 5rem 0;
   text-align: center;
-  background-repeat: no-repeat;
-  position: top;
-  background-size: 100%;
 }
 
 section {
@@ -171,19 +168,22 @@ main :first-child h2 {
   background-color: var(--Light-Grayish-Blue);
 }
 
-.stay-active h2  {
+.sec-2 section {
+  padding: 8rem 0;
+}
+.stay-active h2 {
   width: 100%;
-} 
+}
 .stay-active p {
   width: 80%;
   text-align: left;
   line-height: 1.5;
-  margin: .5rem auto;
+  margin: 0.5rem auto;
   color: var(--Desaturated-Blue);
 }
 
 .how-it-works {
-  padding: .5rem;
+  padding: 0.5rem;
   border-bottom: 2px solid var(--Moderate-Cyan);
   margin: 3.5rem auto;
   width: max-content;
@@ -193,11 +193,9 @@ main :first-child h2 {
   align-items: center;
 }
 
-
 .how-it-works a {
   color: var(--Moderate-Cyan);
 }
-
 
 .card {
   width: 450px;
@@ -214,9 +212,8 @@ main :first-child h2 {
   -moz-border-radius: 0.3rem;
   -ms-border-radius: 0.3rem;
   -o-border-radius: 0.3rem;
-  box-shadow: 1px 0px 10px 5px var(--Light-Gray);
+  box-shadow: 5px 5px 10px #d4d4d4, -5px -5px 10px #d4d4d4;
 }
-
 
 .card div {
   margin: 0;
@@ -228,7 +225,6 @@ main :first-child h2 {
   height: 40px;
   margin: 0;
   padding: 0;
-  
 }
 
 .card p {
@@ -263,4 +259,10 @@ main :first-child h2 {
   font-weight: bold;
   position: relative;
   line-height: 0;
+}
+
+.access-section {
+  color: white;
+  background-color: var(--Desaturated-Blue);
+  margin: 0 auto;
 }
