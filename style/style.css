@@ -38,19 +38,19 @@ p {
     navbar , main , footer 
 */
 
-header,
+/* header,
 nav,
 main,
 footer {
   margin: 2rem 0;
-}
+} */
 
 nav {
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 1rem;
+  padding: 1rem;
 }
 
 nav img {
@@ -91,17 +91,8 @@ p {
 
 /* main partition */
 main {
-  margin: 5rem 0;
   text-align: center;
 }
-
-section {
-  margin: 2rem 0;
-}
-/* main p {
-  width: 65%;
-  text-align: center;
-} */
 
 .first-section {
   text-align: center;
@@ -193,6 +184,16 @@ main :first-child h2 {
   align-items: center;
 }
 
+.how-it-works img {
+  width: 30px;
+  display: inline;
+  position: relative;
+  top: 10px;
+  left: 5px;
+  margin: 0;
+  padding: 0;
+}
+
 .how-it-works a {
   color: var(--Moderate-Cyan);
 }
@@ -265,4 +266,104 @@ main :first-child h2 {
   color: white;
   background-color: var(--Desaturated-Blue);
   margin: 0 auto;
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.access-section h2 {
+  width: 100%;
+}
+
+.access-section p {
+  width: 80%;
+  margin: 1rem auto;
+}
+
+.access-section div button,
+.access-section div input {
+  width: 350px;
+  padding: 15px;
+  margin: 7.5px 0;
+  border-radius: 0.2rem;
+  -webkit-border-radius: 0.2rem;
+  -moz-border-radius: 0.2rem;
+  -ms-border-radius: 0.2rem;
+  -o-border-radius: 0.2rem;
+  font-family: "Raleway", sans-serif;
+  outline: none;
+}
+
+.access-section div input {
+  border: 1px solid var(--Desaturated-Blue);
+}
+
+.access-section div input::placeholder {
+  color: var(--Light-Gray);
+}
+.access-section div button {
+  border: none;
+  color: var(--Light-Grayish-Blue);
+  background-color: var(--Bright-Blue);
+  font-weight: 600;
+}
+
+footer {
+  background-color: var(--Very-Dark-Blue);
+  padding: 1.5rem;
+  margin: 0;
+  font-weight: 400;
+}
+
+footer a,
+footer span,
+footer img {
+  color: var(--Light-Gray);
+}
+
+.logo img{
+  filter: brightness(0) invert(1);
+  -webkit-filter: brightness(0) invert(1);
+}
+.contact-container {
+  margin: 1.5rem 0;
+}
+
+.contact-container div {
+  margin: 1rem 0;
+}
+
+.contact-container div span {
+  margin-left: 1rem;
+}
+
+.footer--nav li{
+  margin: 1rem 0;
+}
+
+.social-media{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-media div {
+    display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  margin: 0 .5rem;
+  width: 30px;
+  height: 30px;
+  border: 1px solid white;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.social-media a {
+  position: relative;
+margin: 0 auto;
+  /* top: 50%; */
 }
