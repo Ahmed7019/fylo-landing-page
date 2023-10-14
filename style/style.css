@@ -477,4 +477,26 @@ footer img {
     position: relative;
     top: 0.8rem;
   }
+
+  .access-section {
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .access-section h2 {
+    position: relative;
+    left: 4.3rem;
+  }
+
+  .access-section p {
+    width: 80%;
+    margin: 1px auto;
+  }
+
+  .access-section form button {
+    width: 200px;
+    position: relative;
+    right: 4.7rem;
+  }
 }
