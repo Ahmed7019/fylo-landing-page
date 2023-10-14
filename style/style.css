@@ -499,4 +499,35 @@ footer img {
     position: relative;
     right: 4.7rem;
   }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem 4rem;
+  }
+
+  .logo{
+    position: relative;
+    bottom: 1rem;
+  }
+
+
+  .footer--nav {
+    columns: 2;
+    column-gap: 6rem;
+  }
+
+  .footer--nav li a:hover {
+    color: var(--Bright-Blue);
+  }
+
+  .social-media div:hover {
+    border-color: var(--Bright-Blue);
+    filter: invert(10%);
+    -webkit-filter: invert(10%);
+    background-color: var(--Bright-Blue);
+}
+
+
 }
