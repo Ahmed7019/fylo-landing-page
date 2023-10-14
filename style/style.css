@@ -120,6 +120,10 @@ section img {
   margin: 2.5rem 0;
 }
 
+button {
+  cursor: pointer;
+  text-align: center;
+}
 .first-section div button,
 .first-section div input {
   width: 350px;
@@ -275,8 +279,8 @@ main :first-child h2 {
   margin: 1rem auto;
 }
 
-.access-section div button,
-.access-section div input {
+.access-section form button,
+.access-section form input {
   width: 350px;
   padding: 15px;
   margin: 7.5px 0;
@@ -289,14 +293,14 @@ main :first-child h2 {
   outline: none;
 }
 
-.access-section div input {
+.access-section form input {
   border: 1px solid var(--Desaturated-Blue);
 }
 
-.access-section div input::placeholder {
+.access-section form input::placeholder {
   color: var(--Light-Gray);
 }
-.access-section div button {
+.access-section form button {
   border: none;
   color: var(--Light-Grayish-Blue);
   background-color: var(--Bright-Blue);
@@ -362,4 +366,66 @@ footer img {
   position: relative;
   margin: 0 auto;
   /* top: 50%; */
+}
+
+/* Desktop design */
+
+@media screen and (min-width: 1024px) {
+  h1,
+  h2,
+  p {
+    width: 70%;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+  }
+  .first-section {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .first-section-img {
+    margin: 0 3.5rem;
+    order: 1;
+  }
+
+  .first-section form input,
+  .first-section form button {
+    margin: 0 0.5rem;
+  }
+
+  .first-section form input {
+    width: 350px;
+    margin-left: 0;
+  }
+  .first-section form button {
+    text-align: center;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  button:hover {
+    filter: opacity(85%);
+    -webkit-filter: opacity(85%);
+}
+  .first-section div :last-child {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .sec-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bg {
+    order: 1;
+
+  }
 }
