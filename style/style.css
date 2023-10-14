@@ -371,6 +371,7 @@ footer img {
 /* Desktop design */
 
 @media screen and (min-width: 1024px) {
+
   h1,
   h2,
   p {
@@ -379,6 +380,7 @@ footer img {
     margin: 0;
     text-align: left;
   }
+
   .first-section {
     justify-content: space-between;
     align-items: center;
@@ -411,7 +413,7 @@ footer img {
   button:hover {
     filter: opacity(85%);
     -webkit-filter: opacity(85%);
-}
+  }
   .first-section div :last-child {
     display: flex;
     flex-direction: row;
@@ -426,6 +428,47 @@ footer img {
 
   .bg {
     order: 1;
-
   }
+
+  .sec-2 section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .stay-active {
+    margin: 0;
+    text-align: left;
+    width: fit-content;
+    position: relative;
+  }
+
+  .stay-active h2 {
+    position: relative;
+    width: 100%;
+    left: 4.3rem;
+  }
+
+  .how-it-works {
+    position: relative;
+    margin: 2rem 0;
+    left: 5rem;
+  }
+
+  .how-it-works a:hover {
+    filter: opacity(60%);
+    -webkit-filter: opacity(60%);
+}
+
+.card {
+  position: relative;
+  margin: 0;
+  left: 5rem;
+}
+
+.founder-info span {
+  position: relative;
+  top: .8rem;
+}
 }
